@@ -21,7 +21,11 @@ public class Variables {
 		boolean myBoolean1 = true;
 		boolean myBoolean2 = false;
 		
+		int my_integer = 0;  // another convention
 		
+		// constant variable uses keyword "final" and follows constant variable
+		// naming convention
+		final double TAX_RATE = 0.13;
 		
 
 	}
