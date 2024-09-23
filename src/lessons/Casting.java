@@ -11,10 +11,10 @@ public class Casting {
 		int myInteger1 = 13;
 		myString1 = Integer.toString(myInteger1);
 		System.out.println(myString1);
-		
+
 		// String to int
 		String myString2 = "18";
-		int myInteger2 = 0; 
+		int myInteger2 = 0;
 		myInteger2 = Integer.parseInt(myString2);
 		System.out.println(myInteger2);
 		
@@ -33,18 +33,25 @@ public class Casting {
 		// int to double
 		int myInteger3 = 42;
 		double myDouble3 = 0.0;
-		myDouble3 = myInteger3;  
-		// automatic change, no need to explicitly cast
-		// "promoted" to double
-		// no data lost
+		myDouble3 = (double)myInteger3;
+		// casting int to double is automatic
+		// casting int to double will promote, not data lost
 		System.out.println(myDouble3);
 		
 		// double to int
-		double myDouble4 = 15.9;
+		double myDouble4 = 15.8;
 		int myInteger4 = 0;
-		myInteger4 = (int)myDouble4;  // truncates (doesn't round)
-		System.out.println(myInteger4);		
-
+		myInteger4 = (int)myDouble4;
+		// casting double to int will truncate decimal
+		// it will NOT round
+		System.out.println(myInteger4);
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
