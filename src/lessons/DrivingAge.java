@@ -11,21 +11,20 @@ public class DrivingAge {
 		Scanner sc = new Scanner(System.in);
 		
 		// processing
-		System.out.println("Welcome to driving age calculator.");
+		System.out.println("Driving age calculator.");
 		System.out.println("Enter your age: ");
 		age = sc.nextInt();
 		
-		// output
-
 		if (age >= 16)  {
-
-			System.out.println("You're old enough to drive!");
+			
+			System.out.println("You're old enough to drive.");
 		}
-
+		
 		else  {
 			
-			System.out.println("You're not old enough to drive!");
+			System.out.println("You're NOT old enough to drive.");
 		}
+  		
 	}
 
 }
