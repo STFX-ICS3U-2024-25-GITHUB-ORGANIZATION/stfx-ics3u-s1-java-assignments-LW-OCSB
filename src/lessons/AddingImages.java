@@ -14,7 +14,6 @@ public class AddingImages {
 	private JFrame frame;
 	ImageIcon myPicture = new ImageIcon(getClass().getResource("/resources/dog.jpg"));
 
-	
 	/**
 	 * Launch the application.
 	 */
