@@ -2,13 +2,11 @@ package lessons;
 
 public class ProgramControl {
 	
-	// this comment is indented
-	// everything inside class is indented
-	// indentation is imparative for maintainability and
-	// readability
-	
 	public static void main(String[] args)  {
-	
+		
+		// this comment is indented
+		
+		// variables
 		boolean myBoolean = false;
 		
 		if (myBoolean == true)  {
@@ -16,14 +14,10 @@ public class ProgramControl {
 			System.out.println("Hello World!");
 			System.out.println("Hello World again!");
 		}
-	
-		else {
 		
-			System.out.println("The earth is flat.");
-			System.out.println("The earth is still flat.");
+		else  {
+			
+			System.out.println("False.");	
 		}
 	}
-
-// this is not indented and should never happen
-	
 }

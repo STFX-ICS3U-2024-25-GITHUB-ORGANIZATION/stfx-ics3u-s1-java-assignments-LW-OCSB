@@ -1,4 +1,4 @@
-package lessons;
+package sandbox;
 
 public class SwitchStatements {
 

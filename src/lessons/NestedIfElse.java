@@ -7,56 +7,54 @@ public class NestedIfElse {
 
 		// variables
 		Scanner sc = new Scanner(System.in);
-		String foodOption = "";
-		String meatOption = "";
+		String dietaryChoice = "";
 		String vegetarianOption = "";
+		String meatOption = "";
 		
-		// determine dietary preference
-		// we assume that only "M" or "V" can be entered
-		System.out.println("Meat or Vegetarian (M/V)?");
-		foodOption = sc.nextLine();
+		// get user dietary choice
+		System.out.println("Vegetarian or meat (V/M)?");
+		dietaryChoice = sc.nextLine();
 		
-		
-		// user is a Meat eater
-		if (foodOption.equals("M"))  {
+		// vegetarian picked
+		if (dietaryChoice.equals("V"))  {
 			
-			// determine which meat dish to serve
-			System.out.println("You're a meat eater.");
-			System.out.println("Steak or Chicken (S/C)?");
+			// give user 2 vegetarian options
+			System.out.println("Healthy lifestyle!");
+			System.out.println("Tofu or Beans (T/B)?");
+			vegetarianOption = sc.nextLine();
+			
+			// this is a nested if-else statement
+			if (vegetarianOption.equals("T"))  {
+				
+				System.out.println("Tofu will be served!");
+			}
+			
+			else  {
+				
+				System.out.println("Beans will be served!");
+			}
+		
+		}
+	
+		// meat picked
+		else  {					
+
+			// give user 2 meat options
+			System.out.println("Not so healthy lifestyle!");
+			System.out.println("Beef or Chicken (B/C)?");
 			meatOption = sc.nextLine();
 			
-			if (meatOption.equals("S"))  {
+			// this is a nested if/else statement
+			if (meatOption.equals("B")) {
 				
-				System.out.println("Steak will be ready soon!");
+				System.out.println("Big mac will be served!");
 			}
 			
 			else  {
 				
-				System.out.println("Chicken will be ready soon!");
+				System.out.println("McChicken will be served!");
 			}
-			
 		}
-
-		// user is vegetarian
-		else  {
 			
-			// determine which vegetarian options to serve
-			System.out.println("You're a vegetarian.");
-			System.out.println("Tofu or Stir Fry (T/S)?");
-			vegetarianOption = sc.next();
-			
-			if(vegetarianOption.equals("T"))  {
-				
-				System.out.println("Tofu will be chewy!");
-			}
-			
-			else  {
-				
-				System.out.println("Stir fry will have no meat.");
-			}
-			
-		}
-		
 	}
-
 }
