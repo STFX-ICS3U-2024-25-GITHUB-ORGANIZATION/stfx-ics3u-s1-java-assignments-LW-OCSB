@@ -18,11 +18,40 @@ public class PredefinedMethods {
 		// Exceptions are Math and String classes, because
 		// they're so common.
 		
+		// MATH METHODS:
+		
+		// When using methods which returns values, must:
+
+		// 1. Print it:
+		System.out.println(Math.toRadians(360.0));
+		
+		// 2. Assign to a variable:
+		double myAnswer = Math.toRadians(360.0);
+		
+		// 3. Use it (i.e. in a calculation)
+		double myAnswer2 = 13 + Math.toRadians(360.0);
+		
+		System.out.println(Math.max(13,  7));
+		
+		
+		// STRING METHODS
+		
+		String myString = "Hello World!";
+		
+		System.out.println(myString.equals("foo"));
 	
-		// When a method returns a value, must do something with it:
-		// 1. Print it
-		// 2. Assign to a variable
-		// 3. Use in a calculation
+		if (myString.equals("foo"))  {
+			
+			System.out.println("True, do stuff ...");
+		}
+		
+		else  {
+			
+			System.out.println("False, do other stuff ...");
+		}
+		
+		
+	
 		
 		
 		
