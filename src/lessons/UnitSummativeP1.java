@@ -94,6 +94,4 @@ public class UnitSummativeP1 {
 			System.out.println("Not accepted!");
 	}
 	
-	
-	
 }
