@@ -18,12 +18,10 @@ public class U3A1_ErrorChecking {
 			stageChecked = stageOne(userInput);
 		}
 		
-		// stage 
+		// stage 2
 		while (stageChecked == false)  {
 					
-			// System.out.println(" ");
-			// userInput = sc.next();
-			// stageChecked = stageTwo(userInput);
+			// see Stage 1
 		}
 
 	}
@@ -39,7 +37,7 @@ public class U3A1_ErrorChecking {
 		return false;
 	}
 	
-	// DESCRIPTION - 
+	// DESCRIPTION - Stage 2 Method ...
 	// PARAMETETRS - 
 	// RETURN TYPE - 
 	
