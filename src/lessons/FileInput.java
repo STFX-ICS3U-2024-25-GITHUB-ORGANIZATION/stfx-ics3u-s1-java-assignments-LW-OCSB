@@ -21,6 +21,7 @@ public class FileInput {
 			// put contents of file into memory
 			BufferedReader buffer = new BufferedReader(file);
 		
+			// read contents line-by-line from buffer into arrays
 			for (int i=0; i<product.length; i++)  {
 				
 				product[i] = buffer.readLine();
@@ -37,18 +38,9 @@ public class FileInput {
 			System.out.println("Error reading file.");
 		}
 		
-		
 		for(int i=0; i<product.length; i++) {
 			
 			System.out.println(quantity[i] + " " + product[i] + " $" + price[i]);
 		}
-		
-		
-		
-		
-		
-		
-
 	}
-
 }
