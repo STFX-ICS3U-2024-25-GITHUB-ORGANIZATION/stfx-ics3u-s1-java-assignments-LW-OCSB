@@ -18,22 +18,21 @@ public class FileInput {
 			
 			// put contents of file into memory
 			BufferedReader buffer = new BufferedReader(file);
-			
+									
 			for(int i=0; i<products.length; i++)  {
-				
+										
 				products[i] = buffer.readLine();
 				quantity[i] = Integer.parseInt(buffer.readLine());     
 				price[i] = Double.parseDouble(buffer.readLine());
 			}
-			
+									
 			// clear memory
 			buffer.close();
-			
 		}
 		
 		catch(Exception e)  {
 			
-			System.out.println("Error reading file.");
+			System.out.println("Error reading file or buffer.");
 		}
 		
 		// print contents of parallel arrays
