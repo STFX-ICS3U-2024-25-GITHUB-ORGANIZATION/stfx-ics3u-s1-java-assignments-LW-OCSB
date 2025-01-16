@@ -1,4 +1,4 @@
-package assignments;
+package lessons;
 import java.util.Scanner;
 
 public class U3A1_ErrorChecking {
