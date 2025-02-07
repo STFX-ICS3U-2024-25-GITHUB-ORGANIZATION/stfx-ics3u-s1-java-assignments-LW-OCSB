@@ -25,8 +25,10 @@ public class Variables {
 		// constant variable - not meant to be changed
 		final double INTEREST_RATE = 0.035;
 		
-		// Naming Convention - camelCase for variables
-		//					 - ALL_UPPER_CASE for constants
+		// Naming Convention:
+		// - Class names are capitalized
+		// - camelCase for variables
+		// - ALL_UPPER_CASE for constants
 		
 
 	}
