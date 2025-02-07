@@ -28,8 +28,7 @@ public class UserInput {
 		
 		// print contents of userInput2
 		System.out.println("You entered: " + userInput2);
-		
-		sc.
+	
 	}
 
 }
