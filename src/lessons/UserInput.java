@@ -24,7 +24,7 @@ public class UserInput {
 		System.out.println("Please enter a phrase: ");
 		
 		// use Scanner to get input and place into variable
-		userInput2 = sc.nextLine();
+		userInput2 = sc.next();
 		
 		// print contents of userInput2
 		System.out.println("You entered: " + userInput2);
