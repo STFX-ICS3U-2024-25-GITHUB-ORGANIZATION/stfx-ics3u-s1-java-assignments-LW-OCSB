@@ -7,7 +7,9 @@ public class CalculatorCLI {
 	
 		// variables
 		Scanner sc = new Scanner(System.in);
-		int num1, num2, sum;
+		int num1 = 0;
+		int num2 = 0;
+		int sum = 0;
 		
 		System.out.println("Add Calculator.");
 		System.out.println("\nEnter first number: ");
