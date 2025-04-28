@@ -1,7 +1,7 @@
 package lessons;
 import java.util.Scanner;
 
-public class GroupCodeExample {
+public class CodingUsingMethods {
 
 	// PROGRAM DESCRIPTION:
 	// Program will ask user for 6 best marks, calculate average, then will
