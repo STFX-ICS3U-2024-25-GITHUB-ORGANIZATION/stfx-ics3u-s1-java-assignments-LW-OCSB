@@ -19,13 +19,13 @@ public class CodingUsingMethods {
 		grades = getGrades(NUM_GRADES);
 
 		// calculate average
-	//	average = calculateAverage(grades);
+		average = calculateAverage(grades);
 		
 		// determine acceptance to UofO
-	//	accepted = determineAcceptance(average);
+		accepted = determineAcceptance(average, OTTAWAU_CUT_OFF);
 		
 		// output results
-	//	outputResults(accepted);
+		outputResults(accepted);
 		
 	}
 	
@@ -47,5 +47,55 @@ public class CodingUsingMethods {
 		return marks;
 	}
 	
+	
+	// DESCRIPTION - Returns average of int[].
+	// PARAMETERS - int[] a
+	// RETURN - int
+	public static int calculateAverage(int[] a)  {
+		
+		int sum = 0;
+		int average = 0;
+		
+		for(int i=0; i< a.length; i++)  {
+			
+			sum = sum + a[i];
+		}
+		
+		average = sum / a.length;
 
+		return average;
+	}
+	
+	
+	// DESCRIPTION - Determines if user average >= UofO cutoff.
+	// PARAMETERS - int a, int c
+	// RETURN - boolean
+	public static boolean determineAcceptance(int a, int c)  {
+		
+		boolean accepted = false;
+		
+		if (a >= c) {
+			accepted = true;
+		}
+		
+		return accepted;
+	}
+	
+	
+	// DESCRIPTION - Outputs acceptance results to console.
+	// PARAMETERS - boolean b
+	// RETURN - void
+	public static void outputResults(boolean b)  {
+		
+		if (b == true)  {
+			
+			System.out.println("Accepted to UofO.");
+		}
+		
+		else {
+			
+			System.out.println("Not accepted to UofO.");
+		}
+	}
+	
 }
